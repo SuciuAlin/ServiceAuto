@@ -6,6 +6,12 @@ body{
     margin: 0;
     padding: 0;
 }
+
+.carousel-caption {
+    bottom: 35%;
+}
+
+
 .full{
     padding: 0 0 30px 0;
 }
