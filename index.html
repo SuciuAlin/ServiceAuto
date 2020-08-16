@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Service Auto Alba
+        </title>
+
+        
+        <!--Favicons-->
+        <link rel="icon" type="image/png" href="img/logo.png" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/main.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"> 
+
+
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCb1xprYSpXd0q_yDsJ1W2UGhfl9_YGKU0&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+    <style type="text/css">
+      </style>
+    <script>
+      "use strict";
+
+      function initMap() {
+        const myLatLng = {
+          lat: 46.074875, 
+          lng: 23.584342
+        };
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 16,
+          center: myLatLng
+        });
+        new google.maps.Marker({
+          position: myLatLng,
+          map,
+          title: "Hello World!"
+        });
+      }
+    </script>
+    </head>
+    <body>
+
+        <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
+            <a class="navbar-brand" href="#">Service Auto Alba</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#servicii">Servicii</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#galerie">Galerie</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+
+          <!-- HOME -->
+          <a name="home"></a>
+          <div class="container-fluid full">
+          <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./img/prezentare/main4.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-sm-block">
+                  <h3>Pasiune</h3>
+                  <a href="#contact" class="btn btn-lg btn-outline-light">Afla locatia</a>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./img/prezentare/main2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-sm-block">
+                    <h3>Profesionalism</h3>
+                    <a href="#contact" class="btn btn-lg btn-outline-light">Afla locatia</a>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./img/prezentare/main3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-sm-block">
+                    <h3>Daruire</h3>
+                    <a href="#contact" class="btn btn-lg btn-outline-light">Afla locatia</a>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+    
+          <!-- SERVICII -->
+          <a name="servicii"></a>
+          <div class="container text-center">
+              <h1>Servicii</h1>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="card bg-light">
+                        <img src="./img/servicii/schimb_ulei.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Schimb Ulei</h5>
+                          <p class="card-text">Some quick example text to build on the</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="card bg-light">
+                        <img src="./img/servicii/inspectie_tenhica.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Inspectie tehnica</h5>
+                          <p class="card-text">Some quick example text to build on the</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="card bg-light" >
+                        <img src="./img/servicii/calibrare_roti.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Calibrare roti</h5>
+                          <p class="card-text">Some quick example text to build on the</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="card bg-light" >
+                        <img src="./img/servicii/reglare_directie.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Reglare directie</h5>
+                          <p class="card-text">Some quick example text to build on the</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="card bg-light" >
+                        <img src="./img/servicii/schimbare_roti.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Schimb roti</h5>
+                          <p class="card-text">Some quick example text to build on the</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="card bg-light" >
+                        <img src="./img/servicii/decarbonizare_motor.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Decarbonizare motor</h5>
+                          <p class="card-text">Some quick example text to build on the</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+          </div>    
+
+
+        <!--CONTACT-->
+        <a name="contact"></a>
+        <div class="container-fluid text-center bg-light">
+            <h1>Contact</h1>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-sm-12 col-md-8">
+                        <div id="map"></div>
+
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+
+                        <a class="btn btn-lg btn-outline-dark cont" href="tel:+40766782824" ><i class="fas fa-phone"></i> 0766 782 824</a>
+                        
+                        <a class="btn btn-lg btn-outline-dark cont" href="https://api.whatsapp.com/send?phone=+40766782824"><i class="fab fa-whatsapp"></i> 0766 782 824 </a>
+                       
+
+                        <a class="btn btn-lg btn-outline-dark cont" href="https://goo.gl/maps/D1E4tFLmbZSn2f39A">Deschideti in google maps</a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!--GALERIE-->
+        <a name="galerie"></a>
+        <div class="container-fluid text-center">
+            <h1>Galerie</h1>
+            <!--Carousel Wrapper-->
+            <div id="multi-item-example" class="carousel slide carousel-multi-item carousel-multi-item-2" data-ride="carousel">
+
+                <!--Controls-->
+                <div class="controls-top">
+                <a class="black-text" href="#multi-item-example" data-slide="prev"><i class="fas fa-angle-left fa-3x pr-3"></i></a>
+                <a class="black-text" href="#multi-item-example" data-slide="next"><i class="fas fa-angle-right fa-3x pl-3"></i></a>
+                </div>
+                <!--/.Controls-->
+            
+                <!--Slides-->
+                <div class="carousel-inner" role="listbox">
+            
+                <!--First slide-->
+                <div class="carousel-item active">
+            
+                    <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(38).jpg"
+                        alt="Card image cap">
+                    </div>
+                    </div>
+            
+                    <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(19).jpg"
+                        alt="Card image cap">
+                    </div>
+                    </div>
+            
+                    <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(42).jpg"
+                        alt="Card image cap">
+                    </div>
+                    </div>
+            
+                    
+                </div>
+                <!--/.First slide-->
+            
+                <!--Second slide-->
+                <div class="carousel-item">
+            
+                    <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(53).jpg"
+                        alt="Card image cap">
+                    </div>
+                    </div>
+            
+                    <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(25).jpg"
+                        alt="Card image cap">
+                    </div>
+                    </div>
+            
+                    <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(47).jpg"
+                        alt="Card image cap">
+                    </div>
+                    </div>
+            
+            
+                </div>
+                <!--/.Second slide-->
+            
+                <!--Third slide-->
+                <div class="carousel-item">
+            
+                    <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(64).jpg"
+                        alt="Card image cap">
+                    </div>
+                    </div>
+            
+                    <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(51).jpg"
+                        alt="Card image cap">
+                    </div>
+                    </div>
+            
+                    <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(59).jpg"
+                        alt="Card image cap">
+                    </div>
+                    </div>
+            
+            
+                </div>
+                <!--/.Third slide-->
+            
+                </div>
+                <!--/.Slides-->
+            
+            </div>
+            <!--/.Carousel Wrapper-->
+    </div>
+
+
+    <!--FOOTER-->
+    <div class="container-fluid bg-light">
+        <div class="row footer text-center">
+            <div class="col-sm-12">
+                    Site realizat de <a href="#"> SiteDev</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    </body>
+</html>

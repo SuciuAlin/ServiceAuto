@@ -1,0 +1,50 @@
+.nav-link {
+    padding: 0.8rem 1rem;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.full{
+    padding: 0 0 30px 0;
+}
+
+.col-xs-12{
+    padding-bottom: 20px;
+}
+
+h1{
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.cont{
+    margin: 30px 0;
+}
+
+
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+#map {
+    height: 400px;
+    margin-bottom: 40px;
+}
+    
+
+/*
+Galerie
+*/
+@media (min-width: 576px) {
+    .carousel-multi-item-2 .col-md-4{
+    float: left;
+    width: 33%;
+    max-width: 100%; } }
+    
+    .carousel-multi-item-2 .card img {
+    border-radius: 2px; }
+
+
+.footer{
+    padding:20px 0px;
+}
